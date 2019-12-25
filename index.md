@@ -62,3 +62,10 @@ sfdx force:data:soql:query -q \
     Coverage from ApexCodeCoverage -u debuggerOrg -t -r human
 ```
 
+## Use of Date
+
+Date as it may appear to be a class and hence use of ```new Date()```. It is not. It is a primitive and one has to call it as ```Date.newInstance(arg1, arg2, arg3)```
+
+## Use of Boolean
+
+Boolean variable unless initialised, like any other variable also remains initialised to ```null```
