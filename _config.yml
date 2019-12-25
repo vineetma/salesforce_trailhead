@@ -21,11 +21,11 @@
 
 repository: https://github.com/vineetma/springtutorial
 title: Learning Salesforce with TrailHead
-email: your-email@example.com
+email: maheshwari.vineet@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Collection of my learning notes which are created while learning from trailhead and interacting 
+  with my colleagues. It is for my own reference as well as use by others. Feel free to write, if
+  you find inaccuracies in the content.
 baseurl: "/salesforce_trailhead" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
