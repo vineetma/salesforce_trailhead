@@ -69,3 +69,7 @@ Date as it may appear to be a class and hence use of ```new Date()```. It is not
 ## Use of Boolean
 
 Boolean variable unless initialised, like any other variable also remains initialised to ```null```
+
+## Use of data from org
+
+This is not enabled by default. All inserts/updates to org data is temporary and is discarded as soon as tests end. It can be enabled by passing argument to ```isTest(SeeAllData = true)```
