@@ -31,7 +31,7 @@ baseurl: "salesforce_trailhead" # the subpath of your site, e.g. /blog
 #twitter_username: jekyllrb
 #github_username:  jekyll
 destination: ./_site
-plugins_dir: ./_plugins
+plugins: ./_plugins
 layouts: ./_layouts
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
