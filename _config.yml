@@ -38,7 +38,7 @@ markdown: kramdown
 highlighter: pygments
 
 # Build settings
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
 #plugins:
 #  - jekyll-feed
 
