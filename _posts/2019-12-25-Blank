@@ -17,3 +17,24 @@ categories: salesforce
 Restarting Jenkins from command line:
 
 ```java -jar ./jenkins-cli.jar -auth <username>:<password> -s http://localhost:8080/jenkins safe-restart```
+
+## Getting Jenkins started
+
+* Install Tomcat version 8.5+, by uninstalling debian version to directory of my choice (```/opt```)
+* Copy jenkins.war to the webapps
+* In Tomcat conf directory, edit tomcat-users.xml to add users and permissions/roles
+* Since, this needs to be accessed (manager app), enable the remote access to the app by editing and providing anonymous access in ```manager-app/META-INF/context.xml```
+* Start the tomcat server by ```startup.sh```
+
+## Configuring VirtualBox as a separate machine with different network
+
+* Configured Host Networking machine to create additional network interface
+* Use this interface to attach with the newly created VM, i.e. Host-Only VM
+* This helps you to reach to this machine as a different IP and port
+
+## Jenkins plugins problem
+
+Following error didn't go away --
+
+* Problem with reverse proxy not working
+* Possibly the internet traffic from Virtual Box is not able to reach out to internet directly causing this problem
