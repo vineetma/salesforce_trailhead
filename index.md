@@ -73,3 +73,36 @@ Boolean variable unless initialised, like any other variable also remains initia
 ## Use of data from org
 
 This is not enabled by default. All inserts/updates to org data is temporary and is discarded as soon as tests end. It can be enabled by passing argument to ```isTest(SeeAllData = true)```
+
+## Use of Asynchronous Programming
+
+Four types:
+
+* Future -- Timing is not guaranteed
+* Batchable -- Large records, maintenance kind of activity
+* Queueable -- Can sequence
+* Scheduled -- Schedule at particular time
+
+Testing in this:
+
+Two new directives learnt:
+
+* @testSetup
+* testmethod (if written before the return type)
+
+Class must implement for batchable functionality:
+
+* start
+ * this returns Database.QueryLocator
+ * getQueryLocator is a useful function here which would contain SOQL to fetch the records to be used
+ * this contains argument -- 'Database.BatchableContext
+
+* execute
+ * this intakes BatchableContext as the argument and also the scope which would be List of the records of
+ type that are returned in start
+
+* finish
+ * Use AsynJobQueue to query the status of all the jobs and print, once all is done
+
+
+For all the asynchronous jobs, use startTest and stopTest to ensure that asynchronous work is done synchronously.

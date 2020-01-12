@@ -4,3 +4,4 @@ abc
 .jekyll-cache/
 *.lock
 .sfdx
+force-app
