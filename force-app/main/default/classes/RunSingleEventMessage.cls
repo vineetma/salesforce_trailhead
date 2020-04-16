@@ -1,5 +1,5 @@
 public class RunSingleEventMessage {
-    public RunSingleEventMessage() {
+    public static void RunSingleEventMessage() {
         Cloud_News__e newsEvent = new Cloud_News__e(
             Location__c = 'Mountain City',
             Urgent__c = true,
